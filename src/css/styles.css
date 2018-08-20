@@ -1,0 +1,392 @@
+body,
+html {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  height: calc(100% - 2em); }
+
+body {
+  background: #1e5799, -moz-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+  background: -webkit-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+  background: linear-gradient(135deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#008b74', GradientType=1);
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    body {
+      display: grid;
+      grid-template-columns: 30% auto;
+      padding: 2em; } }
+
+aside {
+  display: none; }
+  @media (min-width: 768px) {
+    aside {
+      background-color: whitesmoke;
+      grid-template-columns: auto;
+      padding: 0;
+      display: grid; }
+      aside h2 {
+        text-align: center;
+        margin: 0;
+        padding-top: 1em;
+        font-weight: bold;
+        font-size: 1.5em; }
+      aside h3 {
+        text-align: center;
+        color: black;
+        margin-top: 0.5em; }
+      aside .profile {
+        width: 70%;
+        margin: 4em auto auto auto; }
+        aside .profile img {
+          width: 70%;
+          height: auto;
+          border-radius: 50%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto; }
+        aside .profile button {
+          width: 100%;
+          background: transparent;
+          color: #00C2A8;
+          outline: none;
+          box-sizing: border-box;
+          font-size: 1.2em;
+          padding: 0.8em 0.5em;
+          border: 1px solid #00C2A8;
+          cursor: pointer; }
+        aside .profile button:hover {
+          background: #00C2A8;
+          color: white; }
+      aside .profile .social ul {
+        padding: 1em 0 0 0;
+        text-align: center; }
+        aside .profile .social ul li {
+          display: inline-block; }
+          aside .profile .social ul li img {
+            width: 30px;
+            display: inline-block; } }
+
+main {
+  background: white;
+  padding: 0 1em 1em 1em; }
+  @media (min-width: 768px) {
+    main {
+      margin-top: 0;
+      padding: 2em;
+      background: white url("../svg/bg.svg");
+      background-repeat: no-repeat;
+      background-position-x: right;
+      background-position-y: bottom;
+      background-size: 100%;
+      overflow: auto; } }
+  main #about h1 {
+    padding-bottom: 1em;
+    padding-top: 1em; }
+  main #about img {
+    display: block;
+    margin: auto;
+    border-radius: 50%; }
+  @media (min-width: 768px) {
+    main #about .portrait {
+      display: none; } }
+  main #about p {
+    line-height: 1.5em;
+    text-align: center; }
+  main #about .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding-top: 1em; }
+    main #about .info .infolist {
+      padding-top: 1em; }
+      main #about .info .infolist img {
+        width: 30px;
+        border-radius: 0; }
+      main #about .info .infolist p {
+        padding-top: 0.3em; }
+      main #about .info .infolist span {
+        font-weight: bold;
+        display: block; }
+        @media (min-width: 768px) {
+          main #about .info .infolist span {
+            display: unset; } }
+  main #about .skills {
+    padding-top: 2em; }
+    main #about .skills h1 {
+      padding-bottom: 0 !important; }
+    main #about .skills p {
+      margin-bottom: 0;
+      text-align: left; }
+    main #about .skills .skill {
+      width: 100%;
+      background-color: #ddd;
+      border-radius: 1em; }
+      main #about .skills .skill .html {
+        width: 95%; }
+      main #about .skills .skill .css {
+        width: 80%; }
+      main #about .skills .skill .javascript {
+        width: 75%; }
+      main #about .skills .skill .php {
+        width: 60%; }
+    main #about .skills .skillbar {
+      background: #1e5799, -moz-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+      background: -webkit-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+      background: linear-gradient(135deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#008b74', GradientType=1);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      text-align: right;
+      line-height: 1.5em;
+      padding-right: 1em;
+      border-radius: 1em; }
+  main #education h1 {
+    padding: 1em 0; }
+  main #education .boxes {
+    padding-top: 1em; }
+    main #education .boxes .box {
+      background-color: rgba(245, 245, 245, 0.7);
+      margin: 0.4em;
+      padding: 2em;
+      display: block;
+      padding: 1em; }
+      main #education .boxes .box h4 {
+        margin: 0; }
+        main #education .boxes .box h4 span {
+          color: grey; }
+      main #education .boxes .box h5 {
+        margin: 0;
+        padding-top: 0.5em;
+        color: #00C2A8; }
+      main #education .boxes .box p {
+        margin: 0.6em 0 0 0; }
+    main #education .boxes .box:hover {
+      background: #00C2A8; }
+      main #education .boxes .box:hover h5 {
+        color: white; }
+    @media (min-width: 768px) {
+      main #education .boxes {
+        display: grid;
+        grid-template-columns: 50% 50%; } }
+  main #portfolio h1 {
+    padding: 1em 0; }
+  main #portfolio .boxes {
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    @media (max-width: 580px) {
+      main #portfolio .boxes {
+        display: grid;
+        grid-template-columns: 100%; } }
+    @media (min-width: 768px) {
+      main #portfolio .boxes {
+        display: grid;
+        grid-template-columns: 33% 33% 33%; } }
+    main #portfolio .boxes .box {
+      margin: 0.4em;
+      display: block;
+      padding: 1.5em;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.6);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 3px; }
+      main #portfolio .boxes .box img {
+        max-width: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 3px; }
+      main #portfolio .boxes .box button {
+        width: 100%;
+        padding: 1em;
+        border-bottom: 1px solid #00C2A8;
+        outline: none;
+        background: transparent;
+        box-sizing: border-box;
+        background: #1e5799, -moz-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+        background: -webkit-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+        background: linear-gradient(135deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#008b74', GradientType=1);
+        color: white;
+        border: none;
+        font-size: 1em; }
+      main #portfolio .boxes .box button:hover {
+        background: #00C2A8;
+        color: white;
+        cursor: pointer; }
+  main #contact > * {
+    padding-top: 1em; }
+    @media (min-width: 768px) {
+      main #contact > * {
+        padding: 1em; } }
+  @media (min-width: 768px) {
+    main #contact .contact {
+      display: grid;
+      grid-template-columns: 1fr 2fr; } }
+  main #contact .contact-buttons {
+    text-align: center; }
+    @media (min-width: 768px) {
+      main #contact .contact-buttons {
+        padding-top: 1.5em; } }
+    main #contact .contact-buttons ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-left: 0; }
+      @media (min-width: 768px) {
+        main #contact .contact-buttons ul {
+          display: inline-block; } }
+      main #contact .contact-buttons ul img {
+        width: 20px;
+        padding-top: 1em;
+        padding-right: 1em; }
+        @media (min-width: 768px) {
+          main #contact .contact-buttons ul img {
+            width: 30px; } }
+      main #contact .contact-buttons ul p {
+        display: inline-block;
+        text-align: center; }
+  main #contact .contact-form h3 {
+    text-align: center; }
+  main #contact .contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    padding-top: 1em; }
+    main #contact .contact-form form p {
+      margin: 0; }
+    main #contact .contact-form form .full {
+      grid-column: 1 / 3; }
+    main #contact .contact-form form button,
+    main #contact .contact-form form input,
+    main #contact .contact-form form textarea {
+      width: 100%;
+      padding: 1em;
+      border: none;
+      border-bottom: 1px solid #00C2A8;
+      outline: none;
+      background: transparent;
+      box-sizing: border-box; }
+    main #contact .contact-form form ::placeholder {
+      font-size: 1.1em;
+      text-align: left;
+      padding-left: 1em;
+      font-family: 'Lato', sans-serif; }
+    main #contact .contact-form form button {
+      background: #4ffbdf;
+      /* Old browsers */
+      background: #1e5799, -moz-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+      background: -webkit-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+      background: linear-gradient(135deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#008b74', GradientType=1);
+      color: #f4f4f4;
+      font-size: 1em;
+      border: 0;
+      cursor: pointer; }
+    main #contact .contact-form form button:hover {
+      background: #00C2A8;
+      color: #f4f4f4;
+      outline: 0; }
+  main footer {
+    text-align: center;
+    padding-top: 2em; }
+    main footer .social h4 {
+      font-size: 1.2em;
+      margin-bottom: 0; }
+    main footer .social ul {
+      padding: 1em 0 0 0;
+      text-align: center;
+      margin: 0; }
+      main footer .social ul li {
+        display: inline-block; }
+        main footer .social ul li img {
+          width: 50px;
+          display: inline-block; }
+    @media (min-width: 768px) {
+      main footer .social {
+        display: none; } }
+    main footer p {
+      font-weight: bold;
+      color: #00C2A8; }
+      main footer p span {
+        display: block; }
+        @media (min-width: 768px) {
+          main footer p span {
+            display: inline-block; } }
+
+@media (min-width: 768px) {
+  main::-webkit-scrollbar {
+    display: none; } }
+
+h1 {
+  padding-top: 1em;
+  margin: 0;
+  text-align: center; }
+
+p {
+  font-size: 1em;
+  line-height: 1.5em; }
+
+section {
+  padding-top: 5em; }
+  @media (min-width: 768px) {
+    section {
+      padding-top: 2em; } }
+
+ul {
+  list-style-type: none; }
+
+.nav-header {
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  background: #1e5799, -moz-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+  background: -webkit-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+  background: linear-gradient(135deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#008b74', GradientType=1);
+  height: 75px; }
+  @media (min-width: 768px) {
+    .nav-header {
+      display: none; } }
+  .nav-header h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.5em;
+    position: absolute;
+    top: 1em;
+    left: 1em; }
+  .nav-header img {
+    width: 38px;
+    cursor: pointer;
+    position: absolute;
+    top: 1em;
+    right: 1em; }
+  .nav-header .closebutton {
+    display: none; }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.8s;
+  padding-top: 2em; }
+  @media (min-width: 768px) {
+    .sidenav {
+      display: none; } }
+
+.sidenav a {
+  padding: 1em;
+  text-decoration: none;
+  font-size: 1em;
+  color: #008B74;
+  display: block;
+  transition: 0.8s;
+  text-align: center;
+  text-transform: uppercase; }
+
+.sidenav a:hover {
+  color: #00C2A8; }
