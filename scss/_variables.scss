@@ -1,0 +1,22 @@
+//GRADIENT BACKGROUND
+@mixin bg-gradient(){
+    background: rgb(30, 87, 153),
+     -moz-linear-gradient(-45deg, rgba(30, 87, 153, 1) 0%, rgba(79, 251, 223, 1) 0%, rgba(0, 139, 116, 1) 100%, rgba(0, 139, 116, 1) 100%, rgba(0, 139, 116, 1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(30, 87, 153, 1) 0%, rgba(79, 251, 223, 1) 0%, rgba(0, 139, 116, 1) 100%, rgba(0, 139, 116, 1) 100%, rgba(0, 139, 116, 1) 100%);
+    background: linear-gradient(135deg, rgba(30, 87, 153, 1) 0%, rgba(79, 251, 223, 1) 0%, rgba(0, 139, 116, 1) 100%, rgba(0, 139, 116, 1) 100%, rgba(0, 139, 116, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#008b74', GradientType=1);
+
+}
+
+// COLORS 
+$colors: (
+    primary: #00C2A8,
+    primary-light: #4FFBDF,
+    primary-dark: #008B74
+);
+
+
+
+@function color($colorname){
+    @return map-get($colors, $colorname)
+}

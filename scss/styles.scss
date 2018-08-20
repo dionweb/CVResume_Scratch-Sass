@@ -1,0 +1,498 @@
+@import '_variables';
+$desktop: 768px;
+$mobile: 580px;
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+body,
+html {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    height: calc(100% - 2em);
+}
+
+body {
+    @include bg-gradient();
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    @include desktop {
+        display: grid;
+        grid-template-columns: 30% auto;
+        padding: 2em;
+    }
+}
+
+// GLOBAL 
+aside {
+    display: none;
+    @include desktop {
+        background-color: whitesmoke;
+        grid-template-columns: auto;
+        padding: 0;
+        color: color(white);
+        display: grid;
+        h2 {
+            text-align: center;
+            color: color(black);
+            margin: 0;
+            padding-top: 1em;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        h3 {
+            text-align: center;
+            color: black;
+            margin-top: 0.5em;
+        }
+        .profile {
+            width: 70%;
+            margin: 4em auto auto auto;
+            img {
+                width: 70%;
+                height: auto;
+                border-radius: 50%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            button {
+                width: 100%;
+                background: transparent;
+                color: color(primary);
+                outline: none;
+                box-sizing: border-box;
+                font-size: 1.2em;
+                padding: 0.8em 0.5em;
+                border: 1px solid color(primary);
+                cursor: pointer;
+            }
+            button:hover {
+                background: color(primary);
+                color: white;
+            }
+        }
+        .profile {
+            .social {
+                ul {
+                    padding: 1em 0 0 0;
+                    text-align: center;
+                    li {
+                        display: inline-block;
+                        img {
+                            width: 30px;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+main {
+    background: white;
+    padding: 0 1em 1em 1em;
+    @include desktop {
+        margin-top: 0;
+        padding: 2em;
+        background: white url('../svg/bg.svg');
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: bottom;
+        background-size: 100%;
+        overflow: auto;
+    }
+    #about {
+        h1 {
+            padding-bottom: 1em;
+            padding-top: 1em;
+        }
+        img {
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+        }
+        .portrait {
+            @include desktop {
+                display: none;
+            }
+        }
+        p {
+            line-height: 1.5em;
+            text-align: center;
+        }
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+            padding-top: 1em;
+            .infolist {
+                padding-top: 1em;
+                img {
+                    width: 30px;
+                    border-radius: 0;
+                }
+                p {
+                    padding-top: 0.3em;
+                }
+                span {
+                    font-weight: bold;
+                    display: block;
+                    @include desktop {
+                        display: unset;
+                    }
+                }
+            }
+        }
+        .skills {
+            padding-top: 2em;
+            h1 {
+                padding-bottom: 0 !important;
+            }
+            p {
+                margin-bottom: 0;
+                text-align: left;
+            }
+            .skill {
+                width: 100%;
+                background-color: #ddd;
+                border-radius: 1em;
+                .html {
+                    width: 95%;
+                }
+                .css {
+                    width: 80%;
+                }
+                .javascript {
+                    width: 75%;
+                }
+                .php {
+                    width: 60%;
+                }
+            }
+            .skillbar {
+                @include bg-gradient();
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                text-align: right;
+                line-height: 1.5em;
+                padding-right: 1em;
+                border-radius: 1em;
+            }
+        }
+    }
+    #education {
+        h1 {
+            padding: 1em 0;
+        }
+        .boxes {
+            padding-top: 1em;
+            .box {
+                background-color: rgba(245, 245, 245, 0.7);
+                margin: 0.4em;
+                padding: 2em;
+                display: block;
+                padding: 1em;
+                h4 {
+                    margin: 0;
+                    span {
+                        color: grey;
+                    }
+                }
+                h5 {
+                    margin: 0;
+                    padding-top: 0.5em;
+                    color: color(primary);
+                }
+                p {
+                    margin: 0.6em 0 0 0;
+                }
+            }
+            .box:hover {
+                background: color(primary);
+                h5 {
+                    color: white;
+                }
+            }
+            @include desktop {
+                display: grid;
+                grid-template-columns: 50% 50%;
+            }
+        }
+    }
+    #portfolio {
+        h1 {
+            padding: 1em 0;
+        }
+        .boxes {
+            padding-top: 1em;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            @include mobile {
+                display: grid;
+                grid-template-columns: 100%;
+            }
+            @include desktop {
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+            }
+            .box {
+                margin: 0.4em;
+                display: block;
+                padding: 1.5em;
+                text-align: center;
+                background-color: rgba(255, 255, 255, 0.6);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                border-radius: 3px;
+                img {
+                    max-width: 50%;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+                    border-radius: 3px;
+                }
+                button {
+                    width: 100%;
+                    padding: 1em;
+                    border-bottom: 1px solid color(primary);
+                    outline: none;
+                    background: transparent;
+                    box-sizing: border-box;
+                    @include bg-gradient();
+                    color: white;
+                    border: none;
+                    font-size: 1em;
+                }
+                button:hover {
+                    background: color(primary);
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    #contact {
+        >* {
+            padding-top: 1em;
+            @include desktop {
+                padding: 1em;
+            }
+        }
+        .contact {
+            @include desktop {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+            }
+        }
+        .contact-buttons {
+            text-align: center;
+            @include desktop {
+                padding-top: 1.5em;
+            }
+            ul {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                
+                @include desktop{
+                    display: inline-block;
+                }
+                padding-left: 0;
+                img {
+                    width: 20px;
+                    @include desktop{
+                        width: 30px;
+                    }
+                    
+                    padding-top: 1em;
+                    padding-right: 1em;
+                }
+                p {
+                    display: inline-block;
+                    text-align: center;
+                }
+            }
+        }
+        .contact-form {
+            h3 {
+                text-align: center;
+            }
+            form {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 30px;
+                padding-top: 1em;
+                p {
+                    margin: 0;
+                }
+                .full {
+                    grid-column: 1 / 3;
+                }
+                button,
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 1em;
+                    border: none;
+                    border-bottom: 1px solid color(primary);
+                    outline: none;
+                    background: transparent;
+                    box-sizing: border-box;
+                }
+                ::placeholder {
+                    font-size: 1.1em;
+                    text-align: left;
+                    padding-left: 1em;
+                    font-family: 'Lato', sans-serif;
+                }
+                button {
+                    background: #4ffbdf; /* Old browsers */
+                    @include bg-gradient();
+                    color: #f4f4f4;
+                    font-size: 1em;
+                    border: 0;
+                    cursor: pointer;
+                }
+                button:hover {
+                    background: color(primary);
+                    color: #f4f4f4;
+                    outline: 0;
+                }
+            }
+        }
+    }
+    footer {
+        text-align: center;
+        padding-top: 2em;
+        .social {
+            h4{
+                font-size: 1.2em;
+                margin-bottom: 0;
+            }
+            ul {
+                padding: 1em 0 0 0;
+                text-align: center;
+                margin: 0;
+                li {
+                    display: inline-block;
+                    img {
+                        width: 50px;
+                        display: inline-block;
+                    }
+                }
+            }
+            @include desktop{
+                display: none;
+            }
+        }
+        p {
+            font-weight: bold;
+            color: color(primary);
+            span {
+                display: block;
+                @include desktop {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+@include desktop {
+    main::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+h1 {
+    padding-top: 1em;
+    margin: 0;
+    text-align: center;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+section {
+    padding-top: 5em;
+    @include desktop{
+        padding-top: 2em;
+    }
+}
+
+ul {
+    list-style-type: none;
+
+} // NAV BAR - MOBILE SCREEN
+
+.nav-header {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    @include bg-gradient();
+    @include desktop{
+        display: none;
+    }
+    height: 75px;
+    h2 {
+        color: color(black);
+        margin: 0;
+        font-weight: bold;
+        font-size: 1.5em;
+        position: absolute;
+        top: 1em;
+        left: 1em;
+    }
+    img {
+        width: 38px;
+        cursor: pointer;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        
+    }
+    .closebutton{
+        display: none;
+    }
+}
+
+.sidenav {
+    @include desktop{
+        display: none;
+    }
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 2em;
+}
+
+.sidenav a {
+    padding: 1em;
+    text-decoration: none;
+    font-size: 1em;
+    color: color(primary-dark);
+    display: block;
+    transition: 0.8s;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sidenav a:hover {
+    color: color(primary);
+}
