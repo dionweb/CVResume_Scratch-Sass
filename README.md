@@ -6,4 +6,4 @@ WORKING ON README.MD
 
 ## Authors
 
-* **Tsentidis Dionysios**
+* **Tsentidis Dionysios** - *DionWeb*
