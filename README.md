@@ -6,9 +6,9 @@ WORKING ON README.MD
 
 ## Built With
 
-* [Html] - Markup Language
-* [Sass](https://sass-lang.com//) - The CSS preprocessor used
-* [Javascript](https://rometools.github.io/rome/) - Used just for sidenav
+* Html - Markup Language
+* Sass - The CSS preprocessor used
+* Javascript - Used just for sidenav
 
 ## Authors
 
