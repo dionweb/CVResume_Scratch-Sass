@@ -4,5 +4,12 @@
   "description": "Portfolio created with sass",
   "main": "index.js",
   "author": "Tsentidis Dionysios",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://dionysiostsentidis.github.io/CVResume_Scratch-Sass/",
+  "dependencies": {
+    "gh-pages": "^1.2.0"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d src"
+  }
 }
