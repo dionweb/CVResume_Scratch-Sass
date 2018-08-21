@@ -6,8 +6,15 @@ Responsive portfolio template created from scratch with Sass. No frameworks.
 WORKING ON README.MD
 
 ## Get it
+Clone
 ```
 git clone https://github.com/dionysiostsentidis/CVResume_Scratch-Sass.git
+```
+
+Sass
+```
+npm install
+npm start
 ```
 
 ## Built With
