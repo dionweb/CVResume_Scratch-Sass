@@ -13,6 +13,7 @@ git clone https://github.com/dionysiostsentidis/CVResume_Scratch-Sass.git
 ## Built With
 
 * Html - Markup Language
+* CSS - Style sheet language
 * Sass - The CSS preprocessor used
 * Javascript - Used just for sidenav
 
