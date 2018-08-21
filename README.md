@@ -19,5 +19,5 @@ WORKING ON README.MD
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Links
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [LivePreview](https://dionysiostsentidis.github.io/CVResume_Scratch-Sass/) 
+* [DionWeb](http://www.dionweb.me/) - Used to generate RSS Feeds
