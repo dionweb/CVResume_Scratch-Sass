@@ -1,6 +1,7 @@
 # CV/Resume Portfolio
 Responsive portfolio template created from scratch with Sass. No frameworks.
-![alt text](https://raw.githubusercontent.com/dionysiostsentidis/CVResume_Scratch-Sass/master/src/images/profile.png)
+
+![alt text](https://raw.githubusercontent.com/dionysiostsentidis/CVResume_Scratch-Sass/master/src/images/mockup.jpg)
 
 WORKING ON README.MD
 
