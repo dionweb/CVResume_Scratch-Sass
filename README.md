@@ -5,16 +5,19 @@ Responsive portfolio template created from scratch with Sass. No frameworks.
 
 WORKING ON README.MD
 
+
 ## Clone
 ```
 git clone https://github.com/dionysiostsentidis/CVResume_Scratch-Sass.git
 ```
+
 
 ## Gulp file is ready (Sass & live server)
 ```
 npm install
 npm start
 ```
+
 
 ## Built With
 
@@ -23,9 +26,11 @@ npm start
 * Sass - The CSS preprocessor used
 * Javascript - Used just for sidenav
 
+
 ## Authors
 
 * **Tsentidis Dionysios** - *[DionWeb](http://www.dionweb.me/)*
+
 
 ## License
 
