@@ -4,6 +4,11 @@ Responsive portfolio template created from scratch with Sass. No frameworks.
 
 WORKING ON README.MD
 
+## Get it
+```
+git clone https://github.com/dionysiostsentidis/CVResume_Scratch-Sass.git
+```
+
 ## Built With
 
 * Html - Markup Language
