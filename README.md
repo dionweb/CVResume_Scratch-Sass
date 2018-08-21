@@ -1,4 +1,4 @@
-# CV/Resume Portfoliov
+# CV/Resume Portfolio
 Responsive portfolio template created from scratch with Sass. No frameworks.
 
 
