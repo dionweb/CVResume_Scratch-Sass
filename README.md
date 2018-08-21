@@ -5,13 +5,12 @@ Responsive portfolio template created from scratch with Sass. No frameworks.
 
 WORKING ON README.MD
 
-## Get it
-Clone
+## Clone
 ```
 git clone https://github.com/dionysiostsentidis/CVResume_Scratch-Sass.git
 ```
 
-Sass
+## Gulp file is ready (Sass & live server)
 ```
 npm install
 npm start
