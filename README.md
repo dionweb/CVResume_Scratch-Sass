@@ -1,12 +1,12 @@
 # CV/Resume Portfolio
 Responsive portfolio template created from scratch with Sass. No frameworks.
 
-![alt text](https://raw.githubusercontent.com/dionysiostsentidis/CVResume_Scratch-Sass/master/src/images/mockup.jpg)
+![alt text](https://raw.githubusercontent.com/dionweb/CVResume_Scratch-Sass/master/src/images/mockup.jpg?token=AmkViXfLAV8UPZrzGc4r9dc3uri6A4yJks5bs-0BwA%3D%3D)
 
 
 ## Clone
 ```
-git clone https://github.com/dionysiostsentidis/CVResume_Scratch-Sass.git
+git clone https://github.com/dionweb/CVResume_Scratch-Sass.git
 ```
 
 
