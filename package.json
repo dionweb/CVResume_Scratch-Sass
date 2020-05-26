@@ -7,7 +7,7 @@
   "license": "MIT",
   "homepage": "https://dionysiostsentidis.github.io/CVResume_Scratch-Sass/",
   "dependencies": {
-    "gh-pages": "^1.2.0"
+    "gh-pages": "^2.2.0"
   },
   "devDependencies": {
     "browser-sync": "^2.24.6",
