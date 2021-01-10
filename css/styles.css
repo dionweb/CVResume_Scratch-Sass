@@ -8,7 +8,7 @@ body {
   background: #1e5799, -moz-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
   background: -webkit-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
   background: linear-gradient(135deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#008b74', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#008b74', GradientType=1);
   background-attachment: fixed;
   background-repeat: no-repeat; }
   @media (min-width: 768px) {
@@ -36,6 +36,7 @@ aside {
         color: black;
         margin-top: 0.5em; }
       aside .profile {
+        text-align: center;
         width: 70%;
         margin: 4em auto auto auto; }
         aside .profile img {
@@ -46,13 +47,13 @@ aside {
           margin-left: auto;
           margin-right: auto; }
         aside .profile button {
-          width: 100%;
+          display: inline-block;
           background: transparent;
           color: #00C2A8;
           outline: none;
           box-sizing: border-box;
           font-size: 1.2em;
-          padding: 0.8em 0.5em;
+          padding: .5em 1em;
           border: 1px solid #00C2A8;
           cursor: pointer; }
         aside .profile button:hover {
@@ -134,7 +135,7 @@ main {
       background: #1e5799, -moz-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
       background: -webkit-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
       background: linear-gradient(135deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#008b74', GradientType=1);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#008b74', GradientType=1);
       background-attachment: fixed;
       background-repeat: no-repeat;
       text-align: right;
@@ -197,20 +198,20 @@ main {
         border-radius: 3px; }
       main #portfolio .boxes .box button {
         width: 100%;
-        padding: 1em;
+        padding: .6em 1em;
         border-bottom: 1px solid #00C2A8;
         outline: none;
         background: transparent;
         box-sizing: border-box;
-        background: #1e5799, -moz-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
-        background: -webkit-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
-        background: linear-gradient(135deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#008b74', GradientType=1);
+        background: #00C2A8;
         color: white;
         border: none;
         font-size: 1em; }
       main #portfolio .boxes .box button:hover {
-        background: #00C2A8;
+        background: #1e5799, -moz-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+        background: -webkit-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+        background: linear-gradient(135deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#008b74', GradientType=1);
         color: white;
         cursor: pointer; }
   main #contact > * {
@@ -258,8 +259,9 @@ main {
     main #contact .contact-form form button,
     main #contact .contact-form form input,
     main #contact .contact-form form textarea {
+      font-size: 0.9em;
       width: 100%;
-      padding: 1em;
+      padding: .6em 1em;
       border: none;
       border-bottom: 1px solid #00C2A8;
       outline: none;
@@ -273,16 +275,16 @@ main {
     main #contact .contact-form form button {
       background: #4ffbdf;
       /* Old browsers */
-      background: #1e5799, -moz-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
-      background: -webkit-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
-      background: linear-gradient(135deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#008b74', GradientType=1);
+      background: #00C2A8;
       color: #f4f4f4;
       font-size: 1em;
       border: 0;
       cursor: pointer; }
     main #contact .contact-form form button:hover {
-      background: #00C2A8;
+      background: #1e5799, -moz-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+      background: -webkit-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+      background: linear-gradient(135deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#008b74', GradientType=1);
       color: #f4f4f4;
       outline: 0; }
   main footer {
@@ -342,7 +344,7 @@ ul {
   background: #1e5799, -moz-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
   background: -webkit-linear-gradient(-45deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
   background: linear-gradient(135deg, #1e5799 0%, #4ffbdf 0%, #008b74 100%, #008b74 100%, #008b74 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#008b74', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#008b74', GradientType=1);
   height: 75px; }
   @media (min-width: 768px) {
     .nav-header {
