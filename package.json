@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^5.0.0"
   },
   "scripts": {
     "deploy": "gh-pages -d src",
