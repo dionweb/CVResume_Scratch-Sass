@@ -1,18 +1,39 @@
-'use strict';
+const { src, dest, watch, series } = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const browsersync = require('browser-sync').create();
 
-const gulp = require('gulp');
-const sass = require('gulp-sass');
+// Sass Task
+function scssTask(){
+  return src('src/scss/*.scss', { sourcemaps: true })
+    .pipe(sass())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(dest('src/css', { sourcemaps: '.' }));
+}
 
-sass.compiler = require('node-sass');
+// Browsersync Tasks
+function browsersyncServe(cb){
+  browsersync.init({
+    server: {
+      baseDir: 'src'
+    }
+  });
+  cb();
+}
 
-gulp.task('sass', function () {
-   return gulp
-      .src('src/scss/*.scss')
-      .pipe(sass().on('error', sass.logError))
-      .pipe(gulp.dest('src/css'));
-});
+function browsersyncReload(cb){
+  browsersync.reload();
+  cb();
+}
 
-gulp.task('default', () => {
-   gulp.watch('src/scss/*.scss', gulp.series('sass'));
-   gulp.watch('src/*.html');
-});
+// Watch Task
+function watchTask(){
+  watch('*.html', browsersyncReload);
+  watch(['src/scss/*.scss'], series(scssTask, browsersyncReload));
+}
+
+// Default Gulp task
+exports.default = series(
+  scssTask,
+  browsersyncServe,
+  watchTask
+);
